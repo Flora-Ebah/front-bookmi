@@ -1,0 +1,288 @@
+## Agence Digitale de Talent Artistique - Spécifications UI/UX et Front-End
+
+### Contexte
+La plateforme vise à connecter des artistes (musiciens, humoristes, DJs, etc.) avec des clients (entreprises, organisateurs d’événements, particuliers) pour la réservation de prestations artistiques.
+
+---
+
+## 1. Landing Page
+
+### Objectif
+Offrir une vitrine moderne, immersive et attractive de la plateforme, orienter les utilisateurs vers leur parcours respectif (Artiste ou Client) tout en créant une expérience émotionnelle forte dès les premières secondes.
+
+### Sections
+- **Header sticky :** Logo animé, menu de navigation avec les onglets suivants :
+  - Accueil
+  - Artistes (scroll vers galerie filtrable avec profils vedettes)
+  - Comment ça marche (parcours client et artiste animé)
+  - Tarifs (cartes comparatives, badges gratuits/premium)
+  - Contact (formulaire avec carte interactive ou chatbot)
+  - Connexion
+  - S'inscrire
+
+- **Hero Banner :** Vidéo ou animation pleine page d'artistes en action, slogan percutant, double appel à l'action ("Réservez un artiste" / "Rejoignez la scène")
+
+- **Fonctionnalités clés :** Illustrations interactives, accès rapide à la recherche, badges de confiance (profils vérifiés, paiements sécurisés), défilement fluide
+
+- **Témoignages :** Carousel avec avis authentiques, notes, photos ou vidéos clients/artistes
+
+- **Section à propos :** Texte engageant, timeline de l'impact social/artistique de la plateforme, photo équipe fondatrice
+
+- **Section communauté :** Statistiques en temps réel (artistes inscrits, réservations en cours, avis positifs)
+
+- **Section actualités événementielles :** Mises en avant des prestations à venir ou passées remarquables
+
+- **Call to Action final :** Invitation à l'inscription ou découverte du catalogue
+
+- **Footer :** Mentions légales, réseaux sociaux, lien vers blog ou actu culturelles locales, lien d’assistance
+
+---
+
+## 2. Espace Artiste
+
+### Améliorations Clés
+- Ajout d'un **tutoriel guidé** à la première connexion pour créer le profil
+- Intégration d'un **coaching IA** (chatbot) pour améliorer son profil, ses tarifs et sa visibilité
+- Ajout de **statistiques personnelles avancées** : vues de profil, taux de réponse, score de performance
+- Mise en place d'un **système de badges de compétence** (ex : artiste le plus réservé, mieux noté, nouvelle révélation)
+- Gestion de **packs d'offre personnalisables** : standard, VIP, premium
+- Calendrier synchronisable avec Google Calendar / Outlook
+
+### Fonctionnalités exceptionnelles
+- Simulateur de revenu prévisionnel par période
+- Option de mise en avant sponsorisée (publicité ciblée dans la plateforme)
+- Espace "Masterclass" pour proposer des formations à d'autres artistes
+
+### User Stories - Artiste
+
+**US-1.1 : Création de profil (P0)**
+En tant qu'artiste, je veux pouvoir créer mon profil avec portfolio, bio, tarifs
+Afin d'être référencé sur la plateforme
+- Formulaire multi-étapes : nom de scène, biographie, catégorie artistique, portfolio (vidéo, audio, image), tarifs
+- Upload média avec preview
+
+**US-1.2 : Gestion de disponibilités (P1)**
+En tant qu'artiste, je veux gérer un calendrier de disponibilités
+Afin que les clients puissent faire des réservations pertinentes
+- Calendrier type Google Agenda
+- Possibilité de bloquer des dates
+
+**US-1.3 : Réception de réservations (P0)**
+En tant qu'artiste, je veux recevoir, accepter ou refuser des demandes
+Afin de gérer mes prestations efficacement
+- Notifications en temps réel
+- Historique des demandes
+- Interface d’acceptation/refus
+
+**US-1.4 : Paiement sécurisé (P0)**
+En tant qu'artiste, je veux recevoir mes paiements après validation de la prestation
+Afin d'être payé en toute confiance
+- Système d’escrow avec affichage de l’acompte et du solde
+- Historique des paiements
+
+**US-1.5 : Système d’avis (P1)**
+En tant qu'artiste, je veux recevoir des notes et commentaires
+Afin d’améliorer ma visibilité
+- Section évaluation avec avis clients et note globale
+
+---
+
+## 3. Espace Client
+
+### Améliorations Clés
+- Ajout d'un **assistant de recherche intelligent** (IA) : suggestions basées sur type d’événement, budget, ambiance
+- Possibilité de **créer des favoris** / artistes préférés
+- Intégration d'un système de **rappels automatiques** pour suivi des réservations
+- Moteur de recommandation basé sur l’historique et les évaluations
+- Ajout d'une fonctionnalité **"collaboration"** pour que plusieurs personnes puissent gérer une même réservation (organisateurs, assistant.e.s, sponsors)
+- Accès à un assistant contractuel IA pour vérifier ou modifier les termes du contrat
+
+### Fonctionnalités exceptionnelles
+- Vue calendrier des réservations passées / futures
+- Alertes en cas de changement de planning artiste ou conditions climatiques
+- Comparateur intelligent de profils similaires
+
+### User Stories - Client
+
+**US-2.1 : Recherche d’artistes (P0)**
+En tant que client, je veux pouvoir chercher un artiste par type, budget, date
+Afin de trouver un profil adapté à mon événement
+- Barre de recherche + filtres avancés
+- Listing avec cartes artistes
+
+**US-2.2 : Détail profil artiste (P0)**
+En tant que client, je veux consulter le profil complet d’un artiste
+Afin d'évaluer s’il correspond à mes besoins
+- Bio, portfolio, tarif, disponibilités, avis
+
+**US-2.3 : Réservation d’un artiste (P0)**
+En tant que client, je veux envoyer une demande de réservation
+Afin de bloquer une date avec l’artiste
+- Formulaire de réservation avec date, lieu, exigence, budget
+- Confirmation par email et tableau de bord
+
+**US-2.4 : Paiement en ligne (P0)**
+En tant que client, je veux payer un acompte et le solde à la fin
+Afin de garantir la réservation
+- Intégration Mobile Money, carte, virement
+- Facture et récapitulatif automatique
+
+**US-2.5 : Historique et suivi (P1)**
+En tant que client, je veux voir mes réservations passées et futures
+Afin de mieux planifier mes événements
+- Timeline + statuts des réservations
+
+**US-2.6 : Noter une prestation (P1)**
+En tant que client, je veux évaluer une prestation après l'événement
+Afin d'aider les futurs clients
+- Formulaire d’avis + étoiles
+
+---
+
+## 4. Espace Administration
+
+### Améliorations Clés
+- Tableau de bord interactif (graphiques temps réel, alertes KPIs, prédiction de tendance)
+- Outils de communication intégrés (messages, newsletters ciblées)
+- Historique d’activités par utilisateur avec système d'audit log
+- Moteur de recommandation de contenus pour les campagnes marketing (IA)
+- Système d'automatisation pour la modération (avis, contenus offensants, faux profils)
+- Intégration d'un **module de gestion des litiges** client/artiste
+
+### Fonctionnalités exceptionnelles
+- Mode "Super Admin" avec vue globale et contrôle sur toute l’infrastructure
+- Export automatisé des données comptables pour les obligations fiscales
+
+### User Stories - Admin
+
+**US-3.1 : Gestion des utilisateurs (P0)**
+En tant qu'administrateur, je veux pouvoir visualiser et modérer les comptes artistes et clients
+Afin de maintenir un environnement sécurisé
+- Tableau de bord utilisateur (statut, date d'inscription, activité)
+- Actions : activer/désactiver, supprimer, envoyer email
+
+**US-3.2 : Validation des profils (P0)**
+En tant qu'admin, je veux valider les nouveaux artistes avant mise en ligne
+Afin de garantir la qualité des profils
+- Workflow de validation avec aperçu du profil
+
+**US-3.3 : Suivi des paiements (P0)**
+En tant qu'administrateur financier, je veux voir tous les paiements effectués
+Afin d'assurer la bonne circulation des flux
+- Liste des transactions avec filtre par statut et date
+
+**US-3.4 : Gestion des avis (P1)**
+En tant qu'admin, je veux modérer les avis clients
+Afin d'éviter les abus
+- Système de signalement + modération manuelle
+
+**US-3.5 : Statistiques et rapports (P1)**
+En tant qu'admin, je veux accéder à des KPIs sur les activités de la plateforme
+Afin de piloter la croissance
+- Graphiques : nombre de réservations, revenus, taux de conversion
+
+---
+
+## 3. Charte graphique
+
+### 3.1. Palette de couleurs
+
+- **Couleur primaire :** #EF6C00 (Orange - Symbolise la créativité et l'énergie)
+- **Couleur secondaire :** #00796B (Vert sarcelle - Représente la confiance et la stabilité)
+- **Couleurs d'accentuation :**
+  - #FFB74D (Orange clair)
+  - #4DB6AC (Vert clair)
+- **Couleurs neutres :**
+  - #FFFFFF (Blanc)
+  - #F5F5F5 (Gris très clair)
+  - #9E9E9E (Gris moyen)
+  - #424242 (Gris foncé)
+  - #212121 (Presque noir)
+- **Couleurs d'état :**
+  - Succès : #4CAF50
+  - Erreur : #F44336
+  - Avertissement : #FFC107
+  - Information : #2196F3
+
+### 3.2. Typographie
+
+**Titres (Montserrat, sans-serif)**
+- H1 : 36px / 44px line-height / Bold
+- H2 : 30px / 38px line-height / Bold
+- H3 : 24px / 32px line-height / Bold
+- H4 : 20px / 28px line-height / Bold
+- H5 : 18px / 26px line-height / Bold
+- H6 : 16px / 24px line-height / Bold
+
+**Corps de texte (Open Sans, sans-serif)**
+- Corps standard : 16px / 24px line-height / Regular
+- Corps petit : 14px / 20px line-height / Regular
+
+**Accentuation (Lato, sans-serif)**
+- Boutons : 16px / Medium
+- Navigation : 16px / Medium
+
+## UX/UI - Directives visuelles
+
+- Design adapté au mobile (responsive first)
+- Couleurs vibrantes inspirées de la culture ivoirienne (orange, ocre, bleu, vert)
+- Typographies modernes, accessibles et artistiques
+- Icônes illustratives animées pour chaque type d’artiste
+- Micro-interactions pour créer une expérience utilisateur intuitive et immersive
+- Feedback visuel pour chaque action utilisateur (loader, validation, erreur)
+- Temps de chargement optimisé avec fallback si connexion faible
+- Accessibilité renforcée (lecteurs d’écran, contraste, navigation clavier)
+- Thématique "dark mode" disponible
+- Comportement adaptatif selon localisation (monnaie, langue, fuseau horaire)
+
+---
+
+## 4. Stack Front-End et Commandes de démarrage
+
+### Commandes pour initialiser le projet
+
+```bash
+npm create vite@latest agence-talent -- --template react
+cd agence-talent
+npm install
+```
+
+### Ajout des bibliothèques essentielles
+
+```bash
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+npm install react-router-dom
+npm install @ant-design/icons
+npm install framer-motion
+npm install react-icons
+npm install react-svg
+```
+
+### Fonts recommandées (à inclure dans index.html ou via Google Fonts)
+- Montserrat
+- Open Sans
+- Lato
+
+### Intégration Tailwind CSS
+Dans `tailwind.config.js`, ajouter :
+```js
+content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"]
+```
+
+Dans `src/index.css`, inclure :
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+## Prochaines étapes
+
+- [ ] Prototypage des wireframes haute-fidélité (Figma)
+- [ ] Atelier de co-création avec l’équipe UI/UX et les utilisateurs pilotes (artistes et clients)
+- [ ] Validation des maquettes responsive (mobile first)
+- [ ] Définition d’un design system (UI kit, composants, tokens de design)
+- [ ] Lancement du développement Front-End avec plan de sprints
+- [ ] Intégration continue avec tests UX A/B et feedback utilisateur réel
+
